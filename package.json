@@ -1,6 +1,6 @@
 {
   "name": "azure-function-queue-to-db",
-  "description": "Azure function for saving messages to db",
+  "description": "Azure function for saving queue messages to cosmosdb",
   "version": "1.0.0",
   "license": "MIT",
   "author": {
@@ -8,7 +8,7 @@
     "email": "geir.gasodden@pythonia.no",
     "url": "https://github.com/zrrrzzt"
   },
-  "main": "QueueHandler/index.js",
+  "main": "MessageToDbHandler/index.js",
   "engines": {
     "node": ">=10.0.0"
   },
@@ -44,5 +44,8 @@
     "hooks": {
       "pre-commit": "npm test"
     }
+  },
+  "dependencies": {
+    "mongojs": "2.6.0"
   }
 }
